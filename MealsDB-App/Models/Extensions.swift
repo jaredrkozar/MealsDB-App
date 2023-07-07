@@ -12,13 +12,13 @@ struct AsyncImageView: View {
     var urlString: String?
     var dimension: CGFloat?
     
-    init(url: String, height: CGFloat) {
+    init(url: String?, height: CGFloat) {
         self.urlString = url
         self.dimension = height
     }
 
     var body: some View {
-        AsyncImage(url: URL(string: urlString!)) { image in
+        AsyncImage(url: URL(string: urlString ?? "")) { image in
             image.resizable()
                 .frame(width: dimension, height: dimension, alignment: .leading)
                 .cornerRadius(8.0)
@@ -26,4 +26,5 @@ struct AsyncImageView: View {
             ProgressView().progressViewStyle(.circular)
         }
     }
+    
 }

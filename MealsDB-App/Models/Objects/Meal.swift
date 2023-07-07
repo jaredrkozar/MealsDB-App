@@ -20,7 +20,6 @@ struct Meal: Decodable, Identifiable {
     var thumbnail: String
     var mealId: String
     var id: Int
-    var mealInfo: MealInfo?
     
     enum CodingKeys: String, CodingKey {
         case name = "strMeal"

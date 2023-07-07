@@ -13,19 +13,43 @@ struct MealsDetailView: View {
     @State private var meal: MealInfo?
     
     var body: some View {
-        HStack {
-            AsyncImageView(url: meal!.thumbnail, height: 70.0)
-            VStack {
-                Text(meal!.name)
-                    .font(.title2)
-                    .bold()
-                
-                Text(meal!.country)
-                    .font(.title2)
-                    .foregroundColor(.gray)
+        VStack {
+            HStack(alignment: .top) {
+                AsyncImageView(url: meal?.thumbnail, height: 90.0)
+                VStack(alignment: .leading) {
+                    Text(meal?.name ?? "Loading...")
+                        .font(.title2)
+                        .bold()
+                    
+                    Text(meal?.country ?? "Loading...")
+                        .font(.title2)
+                        .foregroundColor(.gray)
+                }
             }
+            
+            if meal == nil {
+                Text("Loading")
+            } else {
+                List {
+                    Section {
+                        ForEach(meal!.ingredients, id: \.self) { ingredient in
+                           Text("\(ingredient)")
+                       }
+                      } header: {
+                          Text("Ingredients for food")
+                      }
+                    Section {
+                        ForEach(meal!.instructions, id: \.self) { instruction in
+                           StepCell(text: instruction)
+                       }
+                      } header: {
+                          Text("Steps to make food")
+                      }
+                    
+                }
+            }
+
         }
-        
         .onAppear {
             model.fetchMealInfo(mealID: mealID) { returnedMealInfo in
                 

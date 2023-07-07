@@ -63,7 +63,7 @@ struct MealInfo: Decodable {
             
             let ingredient = try ingredientsList.decodeIfPresent(String.self, forKey: ingredientKey)
             
-            if measurement?.count != 0 && ingredient?.count != 0 {
+            if (measurement?.count != 0 && measurement != nil) && (ingredient?.count != 0 && ingredient != nil) {
                 ingredientsArray.append("\(measurement!) of \(ingredient!)")
             }
         }

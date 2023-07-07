@@ -10,6 +10,7 @@
 		023110F72A5404AE00D8D6EA /* MealCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023110F62A5404AE00D8D6EA /* MealCell.swift */; };
 		023110FD2A55F8B700D8D6EA /* MealInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023110FC2A55F8B700D8D6EA /* MealInfo.swift */; };
 		023110FF2A589DFA00D8D6EA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023110FE2A589DFA00D8D6EA /* Extensions.swift */; };
+		023111022A58BCA700D8D6EA /* StepCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023111012A58BCA700D8D6EA /* StepCell.swift */; };
 		0250D4BF2A53CCF800593DFD /* MealsDB_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0250D4BE2A53CCF800593DFD /* MealsDB_AppApp.swift */; };
 		0250D4C12A53CCF800593DFD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0250D4C02A53CCF800593DFD /* ContentView.swift */; };
 		0250D4C32A53CCF900593DFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0250D4C22A53CCF900593DFD /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 		023110F62A5404AE00D8D6EA /* MealCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealCell.swift; sourceTree = "<group>"; };
 		023110FC2A55F8B700D8D6EA /* MealInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealInfo.swift; sourceTree = "<group>"; };
 		023110FE2A589DFA00D8D6EA /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		023111012A58BCA700D8D6EA /* StepCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCell.swift; sourceTree = "<group>"; };
 		0250D4BB2A53CCF800593DFD /* MealsDB-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MealsDB-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0250D4BE2A53CCF800593DFD /* MealsDB_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsDB_AppApp.swift; sourceTree = "<group>"; };
 		0250D4C02A53CCF800593DFD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +55,15 @@
 				023110FC2A55F8B700D8D6EA /* MealInfo.swift */,
 			);
 			path = Objects;
+			sourceTree = "<group>";
+		};
+		023111002A58BC9B00D8D6EA /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				023110F62A5404AE00D8D6EA /* MealCell.swift */,
+				023111012A58BCA700D8D6EA /* StepCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		0250D4B22A53CCF800593DFD = {
@@ -106,7 +117,7 @@
 			children = (
 				0250D4D62A53E1D100593DFD /* MealModel.swift */,
 				023110FB2A55F8A900D8D6EA /* Objects */,
-				023110F62A5404AE00D8D6EA /* MealCell.swift */,
+				023111002A58BC9B00D8D6EA /* Cells */,
 				023110FE2A589DFA00D8D6EA /* Extensions.swift */,
 			);
 			path = Models;
@@ -191,6 +202,7 @@
 				0250D4BF2A53CCF800593DFD /* MealsDB_AppApp.swift in Sources */,
 				0250D4D92A53EB5A00593DFD /* Meal.swift in Sources */,
 				0250D4D72A53E1D100593DFD /* MealModel.swift in Sources */,
+				023111022A58BCA700D8D6EA /* StepCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
