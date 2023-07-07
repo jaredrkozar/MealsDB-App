@@ -7,7 +7,7 @@
 
 import Foundation
 
-//don't need to encode to json, so we don't need to conform to Encodable
+//don't need to encode to json, so we don't need to conform to Encodable, just Decodable
 
 struct MealsArray: Decodable {
     //decodes the meals array from the API
@@ -34,6 +34,5 @@ struct Meal: Decodable, Identifiable {
         thumbnail = try container.decode(String.self, forKey: .thumbnail)
         mealId = try container.decode(String.self, forKey: .mealId)
         id = Int(mealId)!
-        
     }
 }

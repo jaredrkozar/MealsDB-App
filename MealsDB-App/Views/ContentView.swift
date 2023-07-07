@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject var model = MealModel()
+    @State var model = MealModel()
     var body: some View {
         //requires iOS 15 minimum, sowe can't use the new NavigationSplitView as its an iOS 16+ API
         

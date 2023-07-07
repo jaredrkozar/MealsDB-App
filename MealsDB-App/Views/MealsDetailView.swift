@@ -15,6 +15,7 @@ struct MealsDetailView: View {
     var body: some View {
         VStack {
             HStack(alignment: .top) {
+                //fetches the image for the meal asyncrounsly
                 AsyncImageView(url: meal?.thumbnail, height: 90.0)
                 VStack(alignment: .leading) {
                     Text(meal?.name ?? "Loading...")
@@ -30,6 +31,7 @@ struct MealsDetailView: View {
             if meal == nil {
                 Text("Loading")
             } else {
+                //creates list of ingredients and steps with sections
                 List {
                     Section {
                         ForEach(meal!.ingredients, id: \.self) { ingredient in
@@ -51,6 +53,7 @@ struct MealsDetailView: View {
 
         }
         .onAppear {
+            //returns meal info from model
             model.fetchMealInfo(mealID: mealID) { returnedMealInfo in
                 
                 meal = returnedMealInfo

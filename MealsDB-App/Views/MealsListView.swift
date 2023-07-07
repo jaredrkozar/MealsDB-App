@@ -15,6 +15,7 @@ struct MealsListView: View {
     
     var body: some View {
         NavigationView {
+            //displays list of meals, when a meal is tapped goes to detail view
             List(meals) { meal in
                 NavigationLink(
                     destination: MealsDetailView(mealID: meal.mealId)
@@ -26,6 +27,7 @@ struct MealsListView: View {
         }
         
         .onAppear {
+            //fetches list of meals from model
             model.fetchMealData(completion: { data in
                 meals = data.meals
                 
