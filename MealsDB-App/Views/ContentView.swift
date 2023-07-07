@@ -8,14 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var model = MealModel()
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+        //requires iOS 15 minimum, sowe can't use the new NavigationSplitView as its an iOS 16+ API
+        
+        MealsListView()
+        .environmentObject(model)
     }
 }
 
