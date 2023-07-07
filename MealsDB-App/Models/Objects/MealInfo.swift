@@ -48,6 +48,7 @@ struct MealInfo: Decodable {
         thumbnail = try container.decode(String.self, forKey: .thumbnail)
         country = try container.decode(String.self, forKey: .country)
         let allInstructions = try container.decode(String.self, forKey: .instructions)
+        
         let withoutR = allInstructions.replacingOccurrences(of: "\r", with: "")
         let withoutN = withoutR.replacingOccurrences(of: "\n", with: "")
         instructions = withoutN.components(separatedBy: ". ")
