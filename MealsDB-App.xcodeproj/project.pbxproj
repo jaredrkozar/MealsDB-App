@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0217B5EC2A58C5440037E36A /* MealsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0217B5EB2A58C5440037E36A /* MealsListView.swift */; };
 		023110F72A5404AE00D8D6EA /* MealCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023110F62A5404AE00D8D6EA /* MealCell.swift */; };
 		023110FD2A55F8B700D8D6EA /* MealInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023110FC2A55F8B700D8D6EA /* MealInfo.swift */; };
 		023110FF2A589DFA00D8D6EA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023110FE2A589DFA00D8D6EA /* Extensions.swift */; };
 		023111022A58BCA700D8D6EA /* StepCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023111012A58BCA700D8D6EA /* StepCell.swift */; };
 		023111062A58C1A800D8D6EA /* MealsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023111052A58C1A800D8D6EA /* MealsDetailView.swift */; };
-		024ACAA92A58C47D00F28FF4 /* MealsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024ACAA82A58C47D00F28FF4 /* MealsListView.swift */; };
 		0250D4BF2A53CCF800593DFD /* MealsDB_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0250D4BE2A53CCF800593DFD /* MealsDB_AppApp.swift */; };
 		0250D4C12A53CCF800593DFD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0250D4C02A53CCF800593DFD /* ContentView.swift */; };
 		0250D4C32A53CCF900593DFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0250D4C22A53CCF900593DFD /* Assets.xcassets */; };
@@ -22,12 +22,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0217B5EB2A58C5440037E36A /* MealsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsListView.swift; sourceTree = "<group>"; };
 		023110F62A5404AE00D8D6EA /* MealCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealCell.swift; sourceTree = "<group>"; };
 		023110FC2A55F8B700D8D6EA /* MealInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealInfo.swift; sourceTree = "<group>"; };
 		023110FE2A589DFA00D8D6EA /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		023111012A58BCA700D8D6EA /* StepCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCell.swift; sourceTree = "<group>"; };
 		023111052A58C1A800D8D6EA /* MealsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsDetailView.swift; sourceTree = "<group>"; };
-		024ACAA82A58C47D00F28FF4 /* MealsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MealsListView.swift; path = "MealsDB-App/Models/Objects/MealsListView.swift"; sourceTree = SOURCE_ROOT; };
 		0250D4BB2A53CCF800593DFD /* MealsDB-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MealsDB-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0250D4BE2A53CCF800593DFD /* MealsDB_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsDB_AppApp.swift; sourceTree = "<group>"; };
 		0250D4C02A53CCF800593DFD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -105,8 +105,8 @@
 		0250D4D02A53E17900593DFD /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				024ACAA82A58C47D00F28FF4 /* MealsListView.swift */,
 				0250D4C02A53CCF800593DFD /* ContentView.swift */,
+				0217B5EB2A58C5440037E36A /* MealsListView.swift */,
 				023111052A58C1A800D8D6EA /* MealsDetailView.swift */,
 			);
 			path = Views;
@@ -202,7 +202,7 @@
 				023111062A58C1A800D8D6EA /* MealsDetailView.swift in Sources */,
 				0250D4D72A53E1D100593DFD /* MealModel.swift in Sources */,
 				023111022A58BCA700D8D6EA /* StepCell.swift in Sources */,
-				024ACAA92A58C47D00F28FF4 /* MealsListView.swift in Sources */,
+				0217B5EC2A58C5440037E36A /* MealsListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
